@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+root {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4c2882;
+}
+
+.tarot-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.tarot-card-container img {
+  height: 10rem;
+}
+.tarot-card-container .prompt-btn {
+  border: 2px solid red;
+  position: fixed;
+  top: 0rem;
+  right: 10rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.choose-your-spread-dialog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  row-gap: 1rem;
+  position: fixed;
+}
+.choose-your-spread-dialog h2 {
+  margin: 0rem;
+}
+.choose-your-spread-dialog div {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+.choose-your-spread-dialog div button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.tooltip-portal {
+  border: 2px solid yellow;
+  background-color: #fff;
+  max-width: 20rem;
+  padding: 0.5rem 1rem;
+}
+
+.question {
+  position: fixed;
+}
+
+.three-card-spread {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.tarot-card {
+  transition: box-shadow 400ms ease-in;
+  border-radius: 7px;
+}
+.tarot-card.normal {
+  box-shadow: 0 0 10px #fce570;
+}
+.tarot-card.normal:hover {
+  border-color: #fce570;
+  box-shadow: 0 0 30px #fce570;
+}
+.tarot-card.reversed {
+  box-shadow: 0 0 10px #aa4a44;
+}
+.tarot-card.reversed:hover {
+  border-color: #aa4a44;
+  box-shadow: 0 0 30px #aa4a44;
+}
+
+.wheel-of-cards {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 15rem;
+  position: relative;
+}
+.wheel-of-cards img {
+  position: absolute;
+}
+
+.spread-container {
+  position: fixed;
+  width: 35rem;
+  height: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spread-container img {
+  position: absolute;
+  height: 15rem;
+}
+
+.generated-prompt {
+  position: fixed;
+  border: 2px solid greenyellow;
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-color: rgba(3, 2, 1, 0.1);
+}
+.generated-prompt div {
+  border: 2px solid lightblue;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  width: 50vw;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} /*# sourceMappingURL=style.css.map */
