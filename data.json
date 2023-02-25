@@ -1,0 +1,280 @@
+[
+  {
+    "cards": {
+      "arcana": [
+        { "url": "src/assets/cards/arcana/0-fool.webp", "name": "The Fool" },
+        {
+          "url": "src/assets/cards/arcana/01-magician.webp",
+          "name": "The Magician"
+        },
+        {
+          "url": "src/assets/cards/arcana/02-highpriestess.webp",
+          "name": "The High Priestess"
+        },
+        {
+          "url": "src/assets/cards/arcana/03-empress.webp",
+          "name": "The Empress"
+        },
+        {
+          "url": "src/assets/cards/arcana/04-emperor.webp",
+          "name": "The Emperor"
+        },
+        {
+          "url": "src/assets/cards/arcana/05-hierophant.webp",
+          "name": "The Hierophant"
+        },
+        {
+          "url": "src/assets/cards/arcana/06-lovers.webp",
+          "name": "The Lovers"
+        },
+        {
+          "url": "src/assets/cards/arcana/07-chariot.webp",
+          "name": "The Chariot"
+        },
+        {
+          "url": "src/assets/cards/arcana/08-strength.webp",
+          "name": "Strength"
+        },
+        {
+          "url": "src/assets/cards/arcana/09-hermit.webp",
+          "name": "The Hermit"
+        },
+        { "url": "src/assets/cards/arcana/10-wheel.webp", "name": "The Wheel" },
+        { "url": "src/assets/cards/arcana/11-justice.webp", "name": "Justice" },
+        {
+          "url": "src/assets/cards/arcana/12-hanged-man.webp",
+          "name": "The Hanged-Man"
+        },
+        { "url": "src/assets/cards/arcana/13-death.webp", "name": "Death" },
+        {
+          "url": "src/assets/cards/arcana/14-temperance.jpeg",
+          "name": "Temperature"
+        },
+        { "url": "src/assets/cards/arcana/15-devil.jpeg", "name": "The Devil" },
+        { "url": "src/assets/cards/arcana/16-tower.webp", "name": "The Tower" },
+        { "url": "src/assets/cards/arcana/17-star.jpeg", "name": "The Star" },
+        { "url": "src/assets/cards/arcana/18-moon.webp", "name": "The Moon" },
+        { "url": "src/assets/cards/arcana/19-sun.webp", "name": "The Sun" },
+        {
+          "url": "src/assets/cards/arcana/20-judgement.webp",
+          "name": "The Judgement"
+        },
+        { "url": "src/assets/cards/arcana/21-world.webp", "name": "The World" }
+      ],
+      "cups": [
+        {
+          "url": "src/assets/cards/cups/cups-01-ace.webp",
+          "name": "Ace of Cups"
+        },
+        { "url": "src/assets/cards/cups/cups-02.webp", "name": "Two of Cups" },
+        {
+          "url": "src/assets/cards/cups/cups-03.webp",
+          "name": "Three of Cups"
+        },
+        { "url": "src/assets/cards/cups/cups-04.webp", "name": "Four of Cups" },
+        { "url": "src/assets/cards/cups/cups-05.webp", "name": "Five of Cups" },
+        { "url": "src/assets/cards/cups/cups-06.webp", "name": "Six of Cups" },
+        {
+          "url": "src/assets/cards/cups/cups-07.webp",
+          "name": "Seven of Cups"
+        },
+        {
+          "url": "src/assets/cards/cups/cups-08.webp",
+          "name": "Eight of Cups"
+        },
+        { "url": "src/assets/cards/cups/cups-09.webp", "name": "Nine of Cups" },
+        { "url": "src/assets/cards/cups/cups-10.webp", "name": "Ten of Cups" },
+        {
+          "url": "src/assets/cards/cups/cups-11-page.webp",
+          "name": "Page of Cups"
+        },
+        {
+          "url": "src/assets/cards/cups/cups-12-knight.webp",
+          "name": "Knight of Cups"
+        },
+        {
+          "url": "src/assets/cards/cups/cups-13-queen.webp",
+          "name": "Queen of Cups"
+        },
+        {
+          "url": "src/assets/cards/cups/cups-14-king.webp",
+          "name": "King of Cups"
+        }
+      ],
+      "pentacles": [
+        {
+          "url": "src/assets/cards/pentacles/pentacles-01-ace.webp",
+          "name": "Ace of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-02.webp",
+          "name": "Two of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-03.webp",
+          "name": "Three of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-04.webp",
+          "name": "Four of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-05.webp",
+          "name": "Five of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-06.webp",
+          "name": "Six of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-07.webp",
+          "name": "Seven of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-08.webp",
+          "name": "Eight of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-09.webp",
+          "name": "Nine of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-10.webp",
+          "name": "Ten of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-11-page.webp",
+          "name": "Page of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-12-knight.webp",
+          "name": "Knight of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-13-queen.webp",
+          "name": "Queen of Pentacles"
+        },
+        {
+          "url": "src/assets/cards/pentacles/pentacles-14-king.webp",
+          "name": "King of Pentacles"
+        }
+      ],
+      "swords": [
+        {
+          "url": "src/assets/cards/swords/swords-01-ace.webp",
+          "name": "Ace of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-02.webp",
+          "name": "Two of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-03.webp",
+          "name": "Three of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-04.webp",
+          "name": "Four of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-05.webp",
+          "name": "Five of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-06.webp",
+          "name": "Six of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-07.webp",
+          "name": "Seven of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-08.webp",
+          "name": "Eight of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-09.webp",
+          "name": "Nine of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-10.webp",
+          "name": "Ten of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-11-page.webp",
+          "name": "Page of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-12-knight.webp",
+          "name": "Knight of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-13-queen.webp",
+          "name": "Queen of Swords"
+        },
+        {
+          "url": "src/assets/cards/swords/swords-14-king.webp",
+          "name": "King of Swords"
+        }
+      ],
+      "wands": [
+        {
+          "url": "src/assets/cards/wands/wands-01-ace.webp",
+          "name": "Ace of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-02.webp",
+          "name": "Two of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-03.webp",
+          "name": "Three of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-04.webp",
+          "name": "Four of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-05.webp",
+          "name": "Five of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-06.webp",
+          "name": "Six of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-07.webp",
+          "name": "Seven of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-08.webp",
+          "name": "Eight of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-09.webp",
+          "name": "Nine of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-10.webp",
+          "name": "Ten of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-11-page.webp",
+          "name": "Page of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-12-knight.webp",
+          "name": "Knight of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-13-queen.webp",
+          "name": "Queen of Wands"
+        },
+        {
+          "url": "src/assets/cards/wands/wands-14-king.webp",
+          "name": "King of Wands"
+        }
+      ]
+    }
+  }
+]
