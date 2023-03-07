@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+$dark-purple: #4c2882;
+$light-purple: #dcd0ff;
+$gold: #fce570;
+$brick-red: #aa4a44;
+
 @mixin flexRow() {
   display: flex;
   flex-wrap: wrap;
   column-gap: 1.5rem;
+}
+
+@mixin hoverGlowingEffect($color) {
+  border-color: $color;
+  box-shadow: 0 0 30px $color;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
 root {
@@ -11,7 +26,7 @@ root {
 }
 
 body {
-  background-color: #4c2882;
+  background-color: $dark-purple;
 }
 
 .tarot-card-container {
@@ -29,25 +44,28 @@ body {
   .prompt-btn {
     border: 2px solid red;
     position: fixed;
-    top: 0rem;
-    right: 10rem;
+    width: 6.5rem;
+    bottom: calc(100vh - 75%);
+    right: calc(50% - 3.25rem);
     cursor: pointer;
-    z-index: 3;
+    z-index: 1;
   }
 }
 
 .choose-your-spread-dialog {
   display: flex;
+  border-radius: 4px;
   flex-direction: column;
   align-items: center;
-  border: 2px solid blue;
   height: fit-content;
   padding: 1rem;
   row-gap: 1rem;
   position: fixed;
-
+  background-color: $light-purple;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   h2 {
     margin: 0rem;
+    color: #fff;
   }
 
   div {
@@ -55,15 +73,41 @@ body {
     button {
       padding: 0.5rem 1rem;
       cursor: pointer;
+      border: none;
+      transition: box-shadow 400ms ease-in;
+
+      &:hover {
+        @include hoverGlowingEffect($gold);
+      }
+    }
+  }
+
+  div {
+    input {
+      width: 22rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border: none;
+      background-color: $light-purple;
+      border-bottom: 2px solid $dark-purple;
+      &:focus {
+        outline: none;
+      }
     }
   }
 }
 
-.tooltip-portal {
+.tooltip-content {
   border: 2px solid yellow;
   background-color: #fff;
   max-width: 20rem;
   padding: 0.5rem 1rem;
+  animation-duration: 400ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tooltip-content[data-state='delayed-open'][data-side='bottom'] {
+  animation-name: slideDownAndFade;
 }
 
 .question {
@@ -79,18 +123,16 @@ body {
   border-radius: 7px;
 
   &.normal {
-    box-shadow: 0 0 10px #fce570;
+    box-shadow: 0 0 10px $gold;
     &:hover {
-      border-color: #fce570;
-      box-shadow: 0 0 30px #fce570;
+      @include hoverGlowingEffect($gold);
     }
   }
 
   &.reversed {
-    box-shadow: 0 0 10px #aa4a44;
+    box-shadow: 0 0 10px $brick-red;
     &:hover {
-      border-color: #aa4a44;
-      box-shadow: 0 0 30px #aa4a44;
+      @include hoverGlowingEffect($brick-red);
     }
   }
 }
@@ -110,7 +152,6 @@ body {
 }
 
 .spread-container {
-  // border: 2px solid red;
   position: fixed;
   width: 35rem;
   height: 17rem;
@@ -126,7 +167,6 @@ body {
 
 .generated-prompt {
   position: fixed;
-  border: 2px solid greenyellow;
   display: flex;
   justify-content: flex-end;
   height: 100vh;
@@ -134,11 +174,28 @@ body {
   z-index: 2;
   backdrop-filter: blur(1px);
   background-color: rgba(3, 2, 1, 0.1);
-  div {
+  top: 0rem;
+  .prompt-container {
+    padding: 0.5rem 1rem;
     border: 2px solid lightblue;
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 100vh;
-    width: 50vw;
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 30rem;
+
+    div {
+      ul {
+        li {
+          h3 {
+            text-decoration: underline;
+          }
+          p {
+            span {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -157,5 +214,16 @@ body {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes slideDownAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
