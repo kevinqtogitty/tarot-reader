@@ -12,6 +12,10 @@ export interface Card {
   url: string;
   name: string;
   reversed?: boolean;
+  meaning: {
+    upright: string;
+    reversed: string;
+  };
 }
 
 interface Data {
@@ -42,6 +46,15 @@ function App() {
     setShuffledCards(allCards);
     return;
   }, []);
+
+  useEffect(() => {
+    document.addEventListener('keydown', keyboardEvent);
+    return () => document.removeEventListener('keydown', keyboardEvent);
+  });
+
+  const keyboardEvent = (e: KeyboardEvent): Promise<void> | void => {
+    if (e.code === 'Escape') setIsPromptOpen(false);
+  };
 
   const shuffleDeck = (array?: Card[]) => {
     if (!array) {
@@ -109,12 +122,14 @@ function App() {
       <Loading {...loadingProps} />
       <Reading {...readingProps} />
       <GeneratedPrompt {...PromptProps} />
-      <button
-        className="prompt-btn"
-        onClick={() => setIsPromptOpen((state) => !state)}
-      >
-        See your prompt
-      </button>
+      {isReadingMounted ? (
+        <button
+          className="prompt-btn"
+          onClick={() => setIsPromptOpen((state) => !state)}
+        >
+          See your prompt
+        </button>
+      ) : null}
     </div>
   );
 }
