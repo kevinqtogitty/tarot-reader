@@ -63,9 +63,9 @@ const ChooseYourSpreadDialog: React.FC<Props> = ({
         <Tooltip.Trigger value={props.valueKey} onClick={(e) => log(e)}>
           {props.choice.type}
         </Tooltip.Trigger>
-        <Tooltip.Portal className="tooltip-portal">
+        <Tooltip.Portal>
           <Tooltip.Content
-            className="tooltip-portal"
+            className="tooltip-content"
             sideOffset={10}
             side={'bottom'}
           >
@@ -82,7 +82,7 @@ const ChooseYourSpreadDialog: React.FC<Props> = ({
         (spring, item) =>
           item && (
             <a.section style={spring} className="choose-your-spread-dialog">
-              <h2>Enter your queston and choose your spread</h2>
+              <h2>Enter your question and choose your spread</h2>
               <div>
                 <label htmlFor="inquiry" hidden />
                 <input
