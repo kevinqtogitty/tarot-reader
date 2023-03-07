@@ -168,6 +168,14 @@ body {
   background-color: rgb(255, 255, 255);
   height: 100%;
   width: 30rem;
+  position: relative;
+}
+.generated-prompt .prompt-container .prompt-close-btn {
+  border: 2px solid green;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
 }
 .generated-prompt .prompt-container div ul li h3 {
   text-decoration: underline;
