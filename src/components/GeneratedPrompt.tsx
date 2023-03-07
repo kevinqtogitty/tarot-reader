@@ -46,6 +46,12 @@ const GeneratedPrompt: React.FC<Props> = ({
           <a.div style={spring} className="prompt-container">
             <h2>Prompt</h2>
             <p>My question: {question}</p>
+            <button
+              className="prompt-close-btn"
+              onClick={() => setIsPromptOpen((state) => !state)}
+            >
+              close
+            </button>
             <p>
               My spread:{' '}
               {spreadChoice === 1
@@ -63,7 +69,7 @@ const GeneratedPrompt: React.FC<Props> = ({
             <ol className="chosen-cards-list">
               {chosenCards.map((card, i) => (
                 <li key={i}>
-                  {card.name} {card.reversed ? 'reversed' : 'not reversed'}
+                  {card.name} {card.reversed ? 'reversed' : 'upright'}
                 </li>
               ))}
             </ol>
